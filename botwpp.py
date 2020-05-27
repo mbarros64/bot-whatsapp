@@ -20,4 +20,5 @@ class WhatsAppBot:
                  chat_box  =  self.driver.find_element_by_class_name('_1Plpp')
                  chat_box.click()
                  chat_box.send_keys(self.mensagem)
-
+                 botao_enviar = self.driver.find_element_by_xpath("//span[@data-icon='send']")
+                 botao_enviar.click()
