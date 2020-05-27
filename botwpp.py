@@ -14,3 +14,7 @@ class WhatsAppBot:
         # <span dir="auto" title="POLÍCIA MALUCO" class="_1wjpf _3NFp9 _3FXB1">POLÍCIA MALUCO</span>
         # <div tabindex="-1" class="_1Plpp">
         # <span data-icon="send" class="">
+        for grupo in self.grupos: 
+                 grupo = self.driver.find_element_by_xpath(f"//span[@title='{grupo}']")
+                 
+
