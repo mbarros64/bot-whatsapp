@@ -16,5 +16,8 @@ class WhatsAppBot:
         # <span data-icon="send" class="">
         for grupo in self.grupos: 
                  grupo = self.driver.find_element_by_xpath(f"//span[@title='{grupo}']")
-                 
+                 grupo.click()
+                 chat_box  =  self.driver.find_element_by_class_name('_1Plpp')
+                 chat_box.click()
+                 chat_box.send_keys(self.mensagem)
 
